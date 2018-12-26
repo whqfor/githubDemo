@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>OC与JS交互</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+
+	<body>
+
+		<div id="button_div" onclick="JSCallOCNormal()">
+			JS调用OC方法无回调
+		</div>
+        
+        <div id="button_div" onclick="JSCallOCSyncCallBack()">
+            JS调用OC方法prompt同步回调
+        </div>
+        
+        <div id="button_div" onclick="JSCallOCAsyncCallBack()">
+            JS调用OC方法messageHandler异步回调
+        </div>
+
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>
